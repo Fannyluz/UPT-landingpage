@@ -674,7 +674,7 @@ section {
 @media (min-width: 1200px) {
   .why-us .icon-box:hover {
     transform: scale(1.1);
-    background-color: #D80E3E;
+    background-color: #f2bb09;
     /*color: #fff;*/
   }
   .why-us .icon-box a:hover {
