@@ -21,7 +21,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ffc107;
+  --color-primary: #ffcd1e;
   --color-secondary: #37373f;
 }
 
@@ -183,8 +183,9 @@ section {
   line-height: 0;
 }
 
+/* para el icono de desglose */
 .scroll-top:hover {
-  background: #ec2727;
+  background: #2b2843;
   color: #fff;
 }
 
@@ -271,7 +272,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  background: #0a245f;
+  background: #2b2843;
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
@@ -397,7 +398,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #ffc107;
+    color: #ffcd1e;
   }
 
   .navbar .dropdown ul {
@@ -635,11 +636,26 @@ section {
   height: 100%;
   border: 1px solid rgba(55, 55, 63, 0.1);
   transition: 0.3s;
+  border-color: #2b2843;
+  /*border-style: groove;
+  border-width: 2px 10px 7px 2px;*/
+
+  border-radius : 4mm;
 }
+
+.why-us .icon-box img{
+  border-top-right-radius :10mm; /* Borde superior derecho, con un radio de 5 pixels */
+  border-top-left-radius : 10mm;
+  border: 1px;
+  border-style: solid;
+  border-color: #ffcd1e;
+
+}
+
 
 .why-us .icon-box .more-btn {
   display: inline-block;
-  background: #0a245f;
+  background: #2b2843;
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 50px;
@@ -665,6 +681,7 @@ section {
   font-weight: 400;
   margin: 0 0 30px 0;
   font-family: var(--font-secondary);
+  color: #2b2843;
 }
 
 .why-us .icon-box p {
@@ -675,15 +692,22 @@ section {
 @media (min-width: 1200px) {
   .why-us .icon-box:hover {
     transform: scale(1.1);
-    background-color: #f2bb09;
+    background-color: #fff;
+    color: #0ea779;
     /*color: #fff;*/
   }
-  .why-us .icon-box a:hover {
-    color: #fff;
-  }
+
+ 
 }
 
+ /*color de a:hover*/
+ .why-us .icon-box .text-center .color a {
+  color: #2b2843;
+}
 
+.why-us .icon-box .text-center .color a:hover {
+  color: #ffcd1e;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -722,13 +746,37 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: #0a245f;
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+  background: #2b2843;
+  box-shadow: 0 8px 28px #294064;
 }
 
+/* estilo de boton*/
 .hero .btn-book-a-table:hover {
-  background: rgba(206, 18, 18, 0.8);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+  background:#f2bb09;
+  box-shadow: 0 8px 28px #be9818;
+}
+
+ .button {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #2b2843;
+  box-shadow: 0 8px 28px #294064;
+}
+
+
+.button:hover {
+  background:#f2bb09;
+  box-shadow: 0 8px 28px #be9818;
+}
+
+.button a:hover {
+  color: #fff;
 }
 
 .hero .btn-watch-video {
@@ -740,7 +788,7 @@ section {
 }
 
 .hero .btn-watch-video i {
-  color: #ffc107;
+  color: #ffcd1e;
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
@@ -752,7 +800,7 @@ section {
 }
 
 .hero .btn-watch-video:hover i {
-  color: rgba(206, 18, 18, 0.8);
+  color: #2b2843;
 }
 
 @media (max-width: 640px) {
@@ -772,7 +820,7 @@ section {
 .footer {
   font-size: 14px;
   /*background-color: #1f1f24;*/
-  background-color: #0a245f;
+  background-color: #2b2843;
   padding: 50px 0;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -821,6 +869,8 @@ section {
 .footer .footer-links ul a:hover {
   color: #fff;
 }
+
+
 
 .footer .social-links a {
   display: flex;
@@ -957,4 +1007,33 @@ section {
 .chefs .chef-member:hover .social {
   right: 8px;
   opacity: 1;
+}
+
+h5{
+  text-align: left;
+}
+p{
+  text-align: left;
+}
+
+#menu{
+  display: none;
+}
+#menuFACSA{
+  display: none;
+}
+#menuFADE{
+  display: none;
+}
+#menuFACEM{
+  display: none;
+}
+#menuFAEDCOH{
+  display: none;
+}
+#menuFAU{
+  display: none;
+}
+#menuFAING{
+  display: none;
 }
