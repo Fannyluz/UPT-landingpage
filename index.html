@@ -42,49 +42,73 @@
 
 <body>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center section-bg">
+   <!-- ======= Header ======= -->
+   <header id="header" class="header  d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-        <!-- ======= Header ======= -->
-        <header id="header" class="header fixed-top d-flex align-items-center">
-          <div class="container d-flex align-items-center justify-content-between">
+      <a href="https://www.upt.edu.pe/upt/web/index.php" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <h1>UPT</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Facultades</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+
+<div class="hero" id="hero">
+  <div id="hero-carousel" class="gy-12 carousel slide">
+    <div class="position-fixed about-img"  data-aos="fade-up" data-aos-delay="150">
       
-            <a href="https://www.upt.edu.pe/upt/web/index.php" class="logo d-flex align-items-center me-auto me-lg-0">
-              <!-- Uncomment the line below if you also wish to use an image logo -->
-              <img src="assets/img/logo.png" alt="">
-              <h1>UPT</h1>
-            </a>
-      
-            <nav id="navbar" class="navbar">
-              <ul>
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#about">Facultades</a></li>
-              </ul>
-            </nav><!-- .navbar -->
+      <!-- --><img src="assets/img/edificio.jpg" class="img-fluid">
      
-            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      
-          </div>
-        </header><!-- End Header -->
+      <div class="carousel-item active" style="background-image: url(assets/img/edificio.jpg)"> </div>
+      <div class="carousel-item" style="background-image: url(assets/img/bannerupt.png)"> </div>
 
-    <div class="container">
-      <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+       
+        <div class="call-us ">
           <h2 data-aos="fade-up">Bienvenido a<br>Aula Virtual UPT</h2>
           <p data-aos="fade-up" data-aos-delay="100">Comienza tu introducción en el siguiente video.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://www.youtube.com/@upteducacionvirtual6774"  class="btn-book-a-table">Nuestro canal de Youtube</a>
+            <a href="https://www.youtube.com/@upteducacionvirtual6774"  class="btn-book-a-table" target="_blank">Nuestro canal de Youtube</a>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Introducción</span></a>
           </div>
         </div>
-        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/local.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
-        </div>
-      </div>
-    </div>
-  </section><!-- End Hero Section -->
+  
+    
 
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+   
+      
+    </div>
+  </div>
+</div> 
+
+
+<div class="linea">
+  <h4> <b>UNIVERSIDAD PRIVADA DE TACNA</b></h4>
+</div>
+
+
+    <!-- ======= About Section ======= -->
+      
+ <!-- End Hero Section -->
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -114,56 +138,64 @@
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <h4><b>Facultad de Ciencias de la Salud</b></h4>
                   <img src="assets/img/facsa02.jpg" class="img-fluid" alt="">
                   </br>
                   <div class="text-center"> 
-                    <h4><b>Facultad de Ciencias de la Salud</b></h4>
+                    
                     <div >
-                      <div class="color">
-                        <a href="#" onclick="showMenuFACSA(event)" onblur="showMenuFACSA()" class="color">Ver mas</a>
-                      </div>
-                    </br>
-                      <div id="menuFACSA" class="menuFACSA">
-                        <a class="button" href="#book-a-table">Aula Virtual</a>
-                      </br>
-                     </br>
-                     
-                        <h5>Escuelas Profesionales</h5>
-                        <p>Escuela 01</p>
-                        <p>Escuela 02</p>
-                      </div>
+
+                        <div class="color">
+                          <a href="#" onclick="showMenuFACSA(event)" onblur="showMenuFACSA()" class="color">Ver mas</a>
+                        </div>
+
+                        </br>
+
+                        <div id="menuFACSA" class="menuFACSA">
+                          <a class="button" href="#book-a-table">Aula Virtual</a>
+                          </br>
+                          </br>
+                        <h5><u>Escuelas Profesionales</u></h5>
+                          <ul>
+                            <!--     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>-->
+                            <li><em>Escuela Profesional de Medicina Humana </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/198/46147766" class="bi bi-eye-fill" target="_blank"> </a></li>
+                            <li><me>Escuela Profesional de Odontología   </me>&nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/199/74629821" class="bi bi-eye-fill"  target="_blank"> </a></li>
+                            <li><em>Escuela Profesional de Tecnología Medica</em>&nbsp;  <a href="https://www.upt.edu.pe/upt/web/facultad/contenido/200/67227783" class="bi bi-eye-fill"  target="_blank"> </a></li>
+                          </ul>
+                       </div>
                     </div>
                   </div>
                 </div>
               </div><!-- End Icon Box -->
-
-
-
-
+              
+              
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/facem.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/fade.jpg" class="img-fluid" alt="">
                   </br>
                   <div class="text-center"> 
-                    <h4><b>Facultad de Ciencias Empresariales</b></h4>
+                    <h4><b>Facultad de Derecho</b></h4>
                     <div >
                       <div class="color">
-                        <a href="#" onclick="showMenuFACEM(event)" onblur="showMenuFACEM()" class="color">Ver mas</a>
+                        <a href="#" onclick="showMenuFADE(event)" onblur="showMenuFADE()" class="color">Ver mas</a>
                       </div>
                     </br>
-                      <div id="menuFACEM" class="menuFACEM">
+                      <div id="menuFADE" class="menuFADE">
                         <a class="button" href="#book-a-table">Aula Virtual</a>
                       </br>
                      </br>
                      
-                        <h5>Escuelas Profesionales</h5>
-                        <p>Escuela 01</p>
-                        <p>Escuela 02</p>
+                        <h5><u>Escuelas Profesionales</u></h5>
+                        <li><em>-	Escuela Profesional de Derecho </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/165/88612670" class="bi bi-eye-fill" target="_blank"> </a></li>
                       </div>
                     </div>
                   </div>
                 </div>
               </div><!-- End Icon Box -->
+
+
+
+       
 
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
@@ -171,7 +203,7 @@
                   <img src="assets/img/fau.jpg" class="img-fluid" alt="">
                   </br>
                   <div class="text-center"> 
-                    <h4><b>FFacultad de Arquitectura y Urbanismo</b></h4>
+                    <h4><b>Facultad de Arquitectura y Urbanismo</b></h4>
                     <div >
                       <div class="color">
                         <a href="#" onclick="showMenuFAU(event)" onblur="showMenuFAU()" class="color">Ver mas</a>
@@ -182,9 +214,11 @@
                       </br>
                      </br>
                      
-                        <h5>Escuelas Profesionales</h5>
-                        <p>Escuela 01</p>
-                        <p>Escuela 02</p>
+                        <h5><u>Escuelas Profesionales</u></h5>
+                        <ul>
+                          <!--     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>-->
+                          <li><em>Escuela Profesional de Arquitectura </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/231/86264343" class="bi bi-eye-fill" target="_blank"> </a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -207,16 +241,52 @@
                         <a class="button" href="#book-a-table">Aula Virtual</a>
                       </br>
                      </br>
-                     
-                        <h5>Escuelas Profesionales</h5>
-                        <p>Escuela 01</p>
-                        <p>Escuela 02</p>
+
+                        <h5><u>Escuelas Profesionales</u></h5>
+                        <li><em>Escuela Profesional de Ingeniería Civil  </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/186/35205383" class="bi bi-eye-fill" target="_blank"> </a></li>
+                        <li><em>Escuela Profesional de Ingeniería de Sistemas  </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/188/22219543" class="bi bi-eye-fill" target="_blank"> </a></li>
+                        <li><em>Escuela Profesional de Ingeniería Electrónica  </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/189/83512268" class="bi bi-eye-fill" target="_blank"> </a></li>
+                        <li><em>Escuela Profesional de Ingeniería Agroindustrial  </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/190/69158630" class="bi bi-eye-fill" target="_blank"> </a></li>
+                        <li><em>Escuela Profesional de Ingeniería de Ambiental  </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/191/91944274" class="bi bi-eye-fill" target="_blank"> </a></li>
+                        <li><em>Escuela Profesional de Ingeniería industrial  </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/248/56793518" class="bi bi-eye-fill" target="_blank"> </a></li>
                       </div>
                     </div>
                   </div>
                 </div>
               </div><!-- End Icon Box -->
 
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets/img/facem.jpg" class="img-fluid" alt="">
+                  </br>
+                  <div class="text-center"> 
+                    <h4><b>Facultad de Ciencias Empresariales</b></h4>
+                    <div >
+                      <div class="color">
+                        <a href="#" onclick="showMenuFACEM(event)" onblur="showMenuFACEM()" class="color">Ver mas</a>
+                      </div>
+                    </br>
+                      <div id="menuFACEM" class="menuFACEM">
+                        <a class="button" href="#book-a-table">Aula Virtual</a>
+                      </br>
+                     </br>
+                     
+                        <h5><u>Escuelas Profesionales</u></h5>
+                        <ul>
+                          <!--     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>-->
+                          <li><em>Escuela Profesional de Administración 	Turístico-Hotelera   </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/216/22799072" class="bi bi-eye-fill" target="_blank"> </a></li>
+                          <li><me>Escuela Profesional de Administración de negocios Internacionales   </me>&nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/219/26564636" class="bi bi-eye-fill"  target="_blank"> </a></li>
+                          <li><em>Escuela Profesional de Ciencias Contables y Financieras </em>&nbsp;  <a href="https://www.upt.edu.pe/upt/web/facultad/contenido/218/41030883" class="bi bi-eye-fill"  target="_blank"> </a></li>
+                          <li><em>Escuela Profesional de Ingeniería Comercial  </em>&nbsp;  <a href="https://www.upt.edu.pe/upt/web/facultad/contenido/217/33966674" class="bi bi-eye-fill"  target="_blank"> </a></li>
+                          <li><em>Escuela Profesional de Economía y Microfinanzas </em>&nbsp;  <a href="https://www.upt.edu.pe/upt/web/facultad/contenido/221/36364440" class="bi bi-eye-fill"  target="_blank"> </a></li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
@@ -232,11 +302,11 @@
                       <div id="menuFAEDCOH" class="menuFAEDCOH">
                         <a class="button" href="#book-a-table">Aula Virtual</a>
                       </br>
-                     </br>
-                     
-                        <h5>Escuelas Profesionales</h5>
-                        <p>Escuela 01</p>
-                        <p>Escuela 02</p>
+                     </br>               
+                        <h5><u>Escuelas Profesionales</u></h5>
+                        <li><em>Escuela Profesional d3e Educación  </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/170/50729064" class="bi bi-eye-fill" target="_blank"> </a></li>
+                        <li><em>Escuela Profesional de Ciencias de la Comunicación  </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/176/74951171" class="bi bi-eye-fill" target="_blank"> </a></li>
+                        <li><em>Escuela Profesional de Humanidades – Psicología </em> &nbsp;<a href="https://www.upt.edu.pe/upt/web/facultad/contenido/178/48416442" class="bi bi-eye-fill" target="_blank"> </a></li>
                       </div>
                     </div>
                   </div>
@@ -245,31 +315,6 @@
 
 
 
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/fade.jpg" class="img-fluid" alt="">
-                  </br>
-                  <div class="text-center"> 
-                    <h4><b>Facultad de Derecho</b></h4>
-                    <div >
-                      <div class="color">
-                        <a href="#" onclick="showMenuFADE(event)" onblur="showMenuFADE()" class="color">Ver mas</a>
-                      </div>
-                    </br>
-                      <div id="menuFADE" class="menuFADE">
-                        <a class="button" href="#book-a-table">Aula Virtual</a>
-                      </br>
-                     </br>
-                     
-                        <h5>Escuelas Profesionales</h5>
-                        <p>Escuela 01</p>
-                        <p>Escuela 02</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Icon Box -->
 
         
 
@@ -294,11 +339,6 @@
       </div>
     </section><!-- End About Section -->
 
-
-  
-    
-   
-    
 
     <!-- ======= Chefs Section ======= -->
     <section id="chefs" class="chefs section-bg">
@@ -374,6 +414,9 @@
 
       </div>
     </section><!-- End Chefs Section -->
+
+
+
   </main><!-- End #main -->
 
 
@@ -441,7 +484,9 @@
       </div>
     </div>
 
-  </footer><!-- End Footer -->
+  </footer>
+  
+  <!-- End Footer -->
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
