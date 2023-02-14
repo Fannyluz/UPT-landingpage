@@ -290,26 +290,7 @@ section {
   color: var(--color-primary);
 }
 
-.header .btn-book-a-table,
-.header .btn-book-a-table:focus {
-  font-size: 10px;
-  color: #fff;
-  background: var(--color-primary);
-  padding: 8px 10px;
-  margin-left: 30px;
-  border-radius: 50px;
-  transition: 0.3s;
-}
 
-.header .btn-book-a-table:hover,
-.header .btn-book-a-table:focus:hover {
-  color: #fff;
-  background: rgba(206, 18, 18, 0.8);
-}
-
-section {
-  scroll-margin-top: 90px;
-}
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -743,8 +724,175 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+.hero .carousel {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+  margin: 0;
+  position: relative;
+}
+.informacion{
+  background-color: #fff;
+  border: 3px solid #be9818;
+
+}
+
+.hero .carousel-item {
+  position: relative;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+
+.hero .carousel-item::before {
+  content: "";
+  position: relative;
+  inset: 0;
+}
+
+.hero .info {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero .info {
+    padding: 0 50px;
+  }
+}
+
+.hero .info h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-size: 56px;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero .info h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .hero .info h2 {
+    font-size: 36px;
+  }
+}
+
+.hero .info p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.hero .info .btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  background-color: #2b2843;
+  color:#fff;
+  border: 2px solid var(--color-primary);
+}
+
+.hero .info .btn-get-started:hover {
+  background: var(--color-primary);
+}
+
+.hero .carousel-control-prev {
+  justify-content: start;
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+.hero .carousel-control-next {
+  justify-content: end;
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-next {
+    padding-right: 15px;
+  }
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 26px;
+  line-height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.hero .carousel-control-prev:focus,
+.hero .carousel-control-next:focus {
+  opacity: 0.5;
+}
+
+.hero .carousel-control-prev:hover,
+.hero .carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero {
   width: 100%;
+  overflow-x: hidden;
+  padding: 0;
   background-size: cover;
   position: relative;
   min-height: 60vh;
@@ -755,21 +903,23 @@ section {
   font-size: 64px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #be9818;
+  background-color: #2b2843;
   color: var(--color-secondary);
   font-family: var(--font-primary);
 }
 
-.hero h2 span {
+h2 span {
   color: var(--color-primary);
 }
 
-.hero p {
+ .hero p {
   color: #4f4f5a;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-.hero .btn-book-a-table {
+.btn-book-a-table {
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -780,10 +930,11 @@ section {
   color: #fff;
   background: #2b2843;
   box-shadow: 0 8px 28px #294064;
+  text-align: center;
 }
 
 /* estilo de boton*/
-.hero .btn-book-a-table:hover {
+ .btn-book-a-table:hover {
   background:#be9818;
   box-shadow: 0 8px 28px #be9818;
 }
@@ -801,7 +952,6 @@ section {
   box-shadow: 0 8px 28px #294064;
 }
 
-
 .button:hover {
   background:#be9818;
   box-shadow: 0 8px 28px #be9818;
@@ -811,15 +961,17 @@ section {
   color: #fff;
 }
 
-.hero .btn-watch-video {
+.btn-watch-video {
   font-size: 15px;
   transition: 0.5s;
   margin-left: 25px;
   color: var(--font-secondary);
+  color: #2b2843;
+  background: #fff;
   font-weight: 600;
 }
 
-.hero .btn-watch-video i {
+.btn-watch-video i {
   color: #ffcd1e;
   font-size: 32px;
   transition: 0.3s;
@@ -827,11 +979,11 @@ section {
   margin-right: 8px;
 }
 
-.hero .btn-watch-video:hover {
+.btn-watch-video:hover {
   color: var(--color-primary);
 }
 
-.hero .btn-watch-video:hover i {
+.btn-watch-video:hover i {
   color: #2b2843;
 }
 
@@ -860,8 +1012,8 @@ section {
  .call-us {
   left: 5%;
   right: 70%;
-  bottom: 10%;
-  top: 30%;
+  bottom: 40%;
+  top: 20%;
   background-color: #fff;
   box-shadow: 0px 2px 70px rgba(0, 0, 14, 0.08);
   padding: 20px;
@@ -870,7 +1022,7 @@ section {
   position: absolute;
 }
 
- .call-us p {
+ .hero p {
   font-size: 28px;
   font-weight: 700;
   color: var(--color-primary);
@@ -878,6 +1030,7 @@ section {
 
 
 .linea{
+  
   background-color: #be9818;
   color: #fff;
   font-size: 15px;
@@ -889,7 +1042,7 @@ section {
 /*imagenes */
 
 .hero .carousel-item {
-  position: relative;
+  position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center;
@@ -900,7 +1053,7 @@ section {
 }
 .hero .carousel-item::before {
   content: "";
-  position: relative;
+  position: absolute;
   inset: 0;
 }
 
