@@ -31,7 +31,7 @@
 }
 hero-carousel
 /*--------------------------------------------------------------
-# General
+# General BODY
 --------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
@@ -107,11 +107,6 @@ section {
   .header {
     height: 70px;
   }
-}
-
-.header.sticked {
-  border-color: #fff;
-  border-color: #eee;
 }
 
 .header .logo img {
@@ -398,13 +393,13 @@ section {
   }
 }
 
-
-
+/*--------------------------------------------------------------
+# HERO section
+--------------------------------------------------------------*/
 
 /* <!-- ======= Hero Section ======= -->*/
 
 .hero {
- 
   width: 100%;
   overflow-x: hidden;
   padding: 0;
@@ -416,14 +411,11 @@ section {
   position: relative;
   min-height: 73vh;
   padding: -10px 0 10px 0;
- 
-  
 }
 
 .hero .informacion{
   background-color: #fff;
   border: 3px solid #be9818;
-
 }
 
 .hero .carousel {
@@ -480,6 +472,7 @@ section {
   background-color: #2b2843;
   color: #eee;
   font-family: var(--font-primary);
+  padding: 5%;
 }
 
 .hero .info h2:after {
@@ -553,17 +546,6 @@ section {
 }
 
 
-/* <!-- ======= Linea ======= -->*/
-.linea{
-  
-  background-color: #be9818;
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-}
-
-
-
 .hero .informacion .btn-book-a-table {
   font-weight: 500;
   font-size: 15px;
@@ -583,7 +565,6 @@ section {
   background:#be9818;
   box-shadow: 0 8px 28px #be9818;
 }
-
 
 
 .btn-watch-video {
@@ -623,63 +604,15 @@ section {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------------------------------------------------------------
+# linea
+--------------------------------------------------------------*/
+.linea{
+  background-color: #be9818;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
 
 
 /*--------------------------------------------------------------
@@ -694,14 +627,12 @@ section {
   height: 100%;
   border: 1.5px solid #2b2843;
   transition: 0.3s;
- 
   border-radius : 4mm;
 }
 
 .why-us .icon-box img{
   border-top-right-radius :10mm; /* Borde superior derecho, con un radio de 5 pixels */
   border-top-left-radius : 10mm;
-  
   width: 100%;
   height: 100%;
   border: 1px;
@@ -709,7 +640,6 @@ section {
   border-color: #ffcd1e;
 
 }
-
 
 .why-us .icon-box .more-btn {
   display: inline-block;
@@ -738,7 +668,6 @@ section {
 .why-us .icon-box .text-center li a:hover{
   color: #2b2843;
   text-align: left;
-  
 }
 
 
@@ -764,7 +693,6 @@ section {
     /*color: #fff;*/
   }
 
- 
 }
 
  /*color de a:hover*/
@@ -776,8 +704,7 @@ section {
   color: #ffcd1e;
 }
 
-
-.button {
+.why-us .button {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -790,106 +717,187 @@ section {
   box-shadow: 0 8px 28px #294064;
 }
 
-.button:hover {
+.why-us .button:hover {
   background:#be9818;
   box-shadow: 0 8px 28px #be9818;
 }
 
-.button a:hover {
+.why-us .button a:hover {
   color: #fff;
 }
+
+.why-us h5{
+  text-align: left;
+}
+
+
+/* MENU DESPLEJABLE*/
+ul.acorh,
+ul.acorh * {
+margin: 0;
+padding: 0;
+border: 0;
+}
+ul.acorh {
+margin: 10px auto;
+padding: 0;
+list-style: none;
+width: 100%;
+font-size: 15px;
+}
+ul.acorh li {
+list-style: none;
+}
+ul.acorh li a {
+display: block;
+padding: 10px 10px 10px 20px;
+background: #fff;
+color: #2b2843;
+font-family: 'Courier New', Courier, monospace;
+
+}
+ul.acorh li ul {
+max-height: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+transition: .3s all ease-in;
+}
+ul.acorh li li a {
+padding: 10px 10px 10px 40px;
+background: #fff;
+color: #2b2843;
+font-size: 12px;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+}
+ul.acorc li li:last-child a {
+border-bottom: 0;
+}
+ul.acorh li:hover ul {
+max-height: 300px;
+transition: .3s all ease-in;
+}
+ ul.acorh li a:hover {
+background: #be9818;
+color: #fff;
+}
+
+
+
 
 
 
 
 /*--------------------------------------------------------------
-# Hero Section
+# CAPACITACIONES
 --------------------------------------------------------------*/
 
-
-
-/*boton de bienvenida*/
-
-.about-img{
-  min-height: 500px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-
- .hero p {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--color-primary);
-}
-
-
-
-
-
-/*imagenes */
-
-.hero .carousel-control-prev {
-  justify-content: start;
-}
-
-@media (min-width: 640px) {
-  .hero .carousel-control-prev {
-    padding-left: 15px;
-  }
-}
-
-.hero .carousel-control-next {
-  justify-content: end;
-}
-
-@media (min-width: 640px) {
-  .hero .carousel-control-next {
-    padding-right: 15px;
-  }
-}
-
-.hero .carousel-control-next-icon,
-.hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 26px;
-  line-height: 0;
-  background:#2b2843;
-  color:#be9818;
-  border-radius: 50px;
-  width: 54px;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.content{
+  background-color: #fff;
   position: relative;
-}
-
-.hero .carousel-control-prev,
-.hero .carousel-control-next {
-  z-index: 3;
+  border: 1px solid #2b2843;
   transition: 0.3s;
 }
+.content:hover {
+    transform: scale(1.05,1.05);
+    background-color: #fff;
+    color: #2b2843;
+    transition: 0.3s;
+  }
 
-.hero .carousel-control-prev:focus,
-.hero .carousel-control-next:focus {
-  opacity: 0.5;
+.content img{
+  width: 100%;
+  height: 100%;
 }
-
-.hero .carousel-control-prev:hover,
-.hero .carousel-control-next:hover {
-  opacity: 0.3;
+.content .casilla{
+  margin-bottom: 89%;
+  background-color: #2b2843;
+  position: absolute;
+  color: #fff;
+  margin-left: 40%;
+  border-left: 2px solid #be9818;
+  border-right: 2px solid #be9818;
+  border-bottom: 2px solid #be9818;
+  width: 40%;
+  text-align: center;
+  padding: 1%;
+  
 }
+.content .casilla:hover{
+  background-color: #be9818;
+}
+.description{
+margin-left: 3%;
+margin-right: 3%;
+margin-bottom: 10%;
+text-align: justify;
+}
+.description h2{
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: var(--font-primary);
+  font-weight: bold;
+  color: #2b2843;
+  font-size: 36px;
+}
+.chefs ul.acorh,
+ul.acorh * {
+margin: 0;
+padding: 0;
+border: 0;
+}
+.chefs ul.acorh {
+margin: 10px auto;
+padding: 0;
+list-style: none;
+width: 100%;
+font-size: 15px;
+}
+.chefs ul.acorh li {
+list-style: none;
+}
+.chefs ul.acorh li a {
+display: block;
+padding: 10px 10px 10px 20px;
+background: #fff;
+color: #2b2843;
+font-family: 'Courier New', Courier, monospace;
+border-bottom: 3px solid #be9818;
 
-
-
-
-
-
-
-
-
+}
+.chefs ul.acorh li ul {
+max-height: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+transition: .3s all ease-in;
+}
+.chefs ul.acorh li li a {
+padding: 10px 10px 10px 40px;
+background: #fff;
+color: #2b2843;
+font-size: 12px;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+}
+.chefs ul.acorc li li:last-child a {
+border-bottom: 0;
+}
+.chefs ul.acorh li:hover ul {
+max-height: 300px;
+transition: .3s all ease-in;
+}
+.chefs ul.acorh li a:hover {
+background: #be9818;
+color: #fff;
+}
 
 
 /*--------------------------------------------------------------
@@ -995,131 +1003,6 @@ section {
 
 
 /*--------------------------------------------------------------
-# Chefs Section
---------------------------------------------------------------*/
-.chefs .chef-member {
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
-  transition: 0.3s;
-}
-
-.chefs .chef-member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.chefs .chef-member .member-img:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
-  background-size: contain;
-  z-index: 1;
-}
-
-.chefs .chef-member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-}
-
-.chefs .chef-member .social a {
-  transition: color 0.3s;
-  color: rgba(55, 55, 63, 0.4);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
-}
-
-.chefs .chef-member .social a:hover {
-  color: rgba(55, 55, 63, 0.9);
-}
-
-.chefs .chef-member .social i {
-  font-size: 18px;
-}
-
-.chefs .chef-member .member-info {
-  padding: 10px 15px 20px 15px;
-}
-
-.chefs .chef-member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: var(--color-secondary);
-}
-
-.chefs .chef-member .member-info span {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(33, 37, 41, 0.4);
-}
-
-.chefs .chef-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  padding-top: 15px;
-  line-height: 26px;
-  color: rgba(33, 37, 41, 0.7);
-}
-
-.chefs .chef-member:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
-}
-
-.chefs .chef-member:hover .social {
-  right: 8px;
-  opacity: 1;
-}
-
-h5{
-  text-align: left;
-}
-p{
-  text-align: left;
-}
-
-#menu{
-  display: none;
-}
-#menuFACSA{
-  display: none;
-}
-#menuFADE{
-  display: none;
-}
-#menuFACEM{
-  display: none;
-}
-#menuFAEDCOH{
-  display: none;
-}
-#menuFAU{
-  display: none;
-}
-#menuFAING{
-  display: none;
-}
-
-
-
-
-/*--------------------------------------------------------------
 # Scroll top button ICONOS DE WHATSAPP, DESGLOCE
 --------------------------------------------------------------*/
 .scroll-top {
@@ -1153,3 +1036,118 @@ p{
   visibility: visible;
   opacity: 1;
 }
+
+
+
+/*ICONOS DE LAS REDES SOCILAES DE CADA FACULTAD*/
+
+.team-member .image{
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.team-member .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: -10%;
+  background-color: rgba(241, 238, 183, 0.7);
+  opacity: 0;
+  transition: all 0.4s ease;
+  border-top-right-radius :10mm; /* Borde superior derecho, con un radio de 5 pixels */
+  border-top-left-radius : 10mm;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.team-member .social-icons {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.team-member .social-icons a {
+  width: 50px;
+  height: 50px;
+  color: #2b2843;
+}
+.team-member .social-icons a:hover {
+  width: 50px;
+  height: 50px;
+  color: #be9818;
+}
+
+.team-member:hover .social-icons {
+  top: 50%;
+  opacity: 1;
+}
+
+.team-member:hover .overlay {
+  top: 0%;
+  opacity: 1;
+}
+.social-icons a {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  color: #fff;
+  background-color: rgba(141, 147, 224, 0.25);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  
+}
+.social-icons a:hover {
+  background-color: #fff;
+  color: #ffcd1e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# FACULTADES
+--------------------------------------------------------------*/
+
+#menu{
+  display: none;
+}
+#menuFACSA{
+  display: none;
+}
+#menuFADE{
+  display: none;
+}
+#menuFACEM{
+  display: none;
+}
+#menuFAEDCOH{
+  display: none;
+}
+#menuFAU{
+  display: none;
+}
+#menuFAING{
+  display: none;
+}
+
+
+
